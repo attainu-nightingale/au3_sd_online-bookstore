@@ -3,7 +3,7 @@ body{
   color:#fff;
   background-size:cover;
   background-repeat: no-repeat;
-  background: url(https://thenypost.files.wordpress.com/2016/08/lbook.jpg?quality=90&strip=all&w=618&h=410&crop=1)
+  background-image: url(https://thenypost.files.wordpress.com/2016/08/lbook.jpg?quality=90&strip=all&w=618&h=410&crop=1)
 }
 .signin
 {
