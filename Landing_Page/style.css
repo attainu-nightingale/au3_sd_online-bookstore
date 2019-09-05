@@ -14,12 +14,12 @@ header {
     position: sticky;
     box-shadow: 0 8px 6px -6px rgba(8,126,139);
 }
-.cart{
+/* .cart{
     font-size: 36px;
     position: absolute;
     right: 0;
     padding-right: 20px;
-}
+} */
 #login{
     font-weight: bold;
     color:lightgrey;
@@ -153,10 +153,10 @@ a:hover{
 .pic{
     height: 300px;
 }
-.btn{
-    width: 50px;
+.store{
+    width: 96px;
     height: 35px;
-    background-color:darkgoldenrod;
+    background-color: darkgoldenrod;
     color: white;
     position: absolute;
     right: 10px;
@@ -191,3 +191,29 @@ a:hover{
     width: 200px;
     height: 50px;
 }
+/* cart */
+.cart-data{
+    position: absolute;
+    font-size:2.3em;
+    color:black;
+    right:30px;
+    padding-top:10px;
+    cursor:pointer;
+}
+.cart-items{
+    position: absolute;
+    top: 4px;
+    font-size: 0.8em;
+    right: 22px;
+    background-color: white;
+    padding: 2px 7px;
+    border-radius: 50%;
+    color: black;
+}
+  .items{
+      margin: 0px !important;
+  }
+  .quantity{
+    padding-left: 36px !important;
+  }
+  /* end cart */
