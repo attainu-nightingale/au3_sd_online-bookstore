@@ -1,0 +1,49 @@
+body{
+    background-color: wheat;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#sidebar{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background:white;
+    left: -200px;
+}
+#sidebar.active{
+    left: 0px;
+}
+#sidebar ul  {
+    color: rgba(0, 0, 0, 0.938);
+    list-style: none;
+    padding: 5px 10px;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100px;
+}
+#sidebar .toggle-btn{
+    position: absolute;
+    left: 230px;
+    top:20px;
+}
+#sidebar .toggle-btn span{
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: black;
+    margin: 5px 0px;
+}
+#sidebar i {
+    color: rgb(20, 181, 245);
+    text-shadow: 1px;
+}
+#sidebar  ul:hover{
+    color:black;
+    
+}
