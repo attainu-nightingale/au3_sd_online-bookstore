@@ -1,7 +1,12 @@
 body{
     background-size:cover;
+    background-image: url(https://wallup.net/wp-content/uploads/2017/11/22/332800-library-interiors-interior_design-books-knowledge-shelves-748x421.jpg);
     background-repeat: no-repeat;
+<<<<<<< HEAD
+    
+=======
     background-image: url(https://wallup.net/wp-content/uploads/2017/11/22/332800-library-interiors-interior_design-books-knowledge-shelves-748x421.jpg)
+>>>>>>> ff8e0810eebd6b25ad3723d26f611767f1720237
   }
 a{
     color: yellow;
@@ -39,4 +44,8 @@ input[type=button]{
   }
   h2{
     color: white;
+<<<<<<< HEAD
   }
+=======
+  }
+>>>>>>> ff8e0810eebd6b25ad3723d26f611767f1720237
