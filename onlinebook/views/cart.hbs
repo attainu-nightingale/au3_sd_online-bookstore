@@ -1,0 +1,19 @@
+        <div class="col-sm-10">
+            {{# each products}}
+            <div class="card-deck">
+                {{# each this}}
+                <div class="card book-list">
+                    <img class="pic card-img-top" src="{{this.imagePath}}" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="book-name">{{this.title}}</h4>
+                        <span>
+                            <p class="para">&#8377;300 - &#8377;500
+                                <a href="/add-to-cart/{{this._id}}" class="cartbtn btn store">Add to Cart</a>
+                                {{this.description}}</p>
+                        </span>
+                    </div>
+                  </div>
+                </div>
+                {/each}
+            </div>
+            {/each}
