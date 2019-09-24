@@ -62,3 +62,58 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+app.post('/auth', function (req, res) {
+    var flag = false;
+    var username
+    db.collection('users').find({}).toArray(function (err, result) {
+        for (var i = 0; i < result.length; i++) {
+            if (result[i].username == req.body.username && result[i].password == req.body.password) {
+                flag = true;
+                username = result[i].username
+            }
+        }
+        if (flag == true) {
+            req.session.loggedIn = true
+            req.session.username = username
+            console.log(req.session.username)
+            var newresult=[]
+            db.collection('cart').find({ username: req.session.username }).toArray(function (error, result) {
+                if (result.length > 0) {
+                    for (var i = 0; i < result.length; i++) {
+                        newresult.push(result[i]);
+                    }
+                    req.session.loggedIn
+                    req.session.notification = newresult.length;
+            res.redirect('/')
+                }
+            })
+        } else {
+            res.redirect('/login')
+        }
+    })
+});
