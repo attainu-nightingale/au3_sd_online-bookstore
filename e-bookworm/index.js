@@ -120,7 +120,7 @@ app.get('/forgotpassword', function (req, res) {
     res.sendFile(__dirname + '/forms/forgotpassword.html')
 })
 app.post("/signup", function (req, res) {
-    db.collection('users').insertOne({ ...req.body, cart: [], address: [] }, function (error, result) {
+    db.collection('users').insertOne({ ...req.body, cart: [], address: [],orders:[] }, function (error, result) {
         if (error) throw error;
         res.redirect('/login')
     })
